@@ -1,0 +1,62 @@
+<form class="flex flex-col gap-4" method="post" action="#">
+  <div class="flex flex-col gap-4 sm:flex-row sm:gap-8">
+    <div class="flex-1 flex flex-col">
+      <include
+        src="./components/input.html"
+        locals='{
+          "label": "Nombre",
+          "type": "text",
+          "id": "nombre"
+        }'
+      >
+      </include>
+    </div>
+    <div class="flex-1 flex flex-col">
+      <include
+        src="./components/input.html"
+        locals='{
+          "label": "Apellidos",
+          "type": "text",
+          "id": "apellidos"
+        }'
+      >
+      </include>
+    </div>
+  </div>
+  <div class="flex flex-col">
+    <include
+      src="./components/input.html"
+      locals='{
+        "label": "Correo electrónico",
+        "type": "email",
+        "id": "email"
+      }'
+    >
+    </include>
+  </div>
+  <div class="flex flex-col">
+    <include
+      src="./components/input.html"
+      locals='{
+        "label": "Teléfono",
+        "type": "tel",
+        "id": "telefono"
+      }'
+    >
+    </include>
+  </div>
+  <div class="flex flex-col">
+    <label for="comentarios" class="mb-2">Comentario adicional</label>
+    <textarea class="form-input" id="comentarios" rows="3"></textarea>
+  </div>
+  <div>
+    <input class="mr-2" type="checkbox" id="aceptar" required />
+    <label for="aceptar">Acepto los términos y condiciones</label>
+  </div>
+  <button
+    type="submit"
+    class="rounded-md bg-secondary text-white py-1.5 mx-auto w-4/10 sm:w-1/5 hover:bg-red-700 hover:cursor-pointer"
+  >
+    Enviar
+  </button>
+</form>

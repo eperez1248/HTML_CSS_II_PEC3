@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>Ayuntamiento San Lorenzo: Jornadas de cocina tradicional</title>
+  </head>
+
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="m-4 mb-32">
+      <h1
+        class="text-center text-2xl sm:text-6xl mb-8 text-secondary font-medium"
+      >
+        Participantes
+      </h1>
+      <div class="flex flex-wrap flex-row justify-center gap-12">
+        <include
+          src="./components/participante.html"
+          locals='{
+            "imageUrl": "./assets/images/participante1.jpg",
+            "titulo": "Ángel León",
+            "subtitulo": "Chef del restaurante Aponiente"
+            }'
+        ></include>
+        <include
+          src="./components/participante.html"
+          locals='{
+            "imageUrl": "./assets/images/participante2.png",
+            "titulo": "Luis Pereira",
+            "subtitulo": "Experto en cocina sostenible"
+            }'
+        ></include>
+        <include
+          src="./components/participante.html"
+          locals='{
+            "imageUrl": "./assets/images/participante3.png",
+            "titulo": "Celia Jiménez",
+            "subtitulo": "Chef del restaurante La Casa de las Flores"
+            }'
+        ></include>
+        <include
+          src="./components/participante.html"
+          locals='{
+            "imageUrl": "./assets/images/participante4.png",
+            "titulo": "Miguel Herrera",
+            "subtitulo": "Autor del libro"
+            }'
+        ></include>
+        <include
+          src="./components/participante.html"
+          locals='{
+            "imageUrl": "./assets/images/participante5.png",
+            "titulo": "Carlos Torres",
+            "subtitulo": "Especialista en gastronomía tradicional"
+            }'
+        ></include>
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

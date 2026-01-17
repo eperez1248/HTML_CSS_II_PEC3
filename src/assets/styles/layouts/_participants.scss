@@ -1,0 +1,11 @@
+.participante-imagen {
+  @apply w-3/4 h-[380px] sm:h-[450px] object-cover rounded-3xl border-2 border-solid border-secondary duration-500 transition-transform hover:scale-110 hover:mb-7;
+}
+
+.participante-titulo {
+  @apply text-lg sm:text-2xl font-medium mt-2;
+}
+
+.participante-subtitulo {
+  @apply sm:text-xl;
+}
